@@ -44,4 +44,16 @@ export class ApiService {
       )
     )
   }
+
+  removeEmployee(data:any, id:number){
+    return this._http.delete<any>("http://localhost:3000/posts/"+id, data).pipe(
+      map(
+        (
+          res => {
+            return res;
+          }
+        )
+      )
+    )
+  }
 }
