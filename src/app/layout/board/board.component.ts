@@ -13,7 +13,7 @@ export class BoardComponent implements OnInit {
 
   employeeValue!: FormGroup;
   employeeObj:EmployeeModel = new EmployeeModel();
-  employeeList:any[];
+  employeeList!: any[];
 
   constructor(private formBuilder:FormBuilder,
               private api:ApiService) { }
