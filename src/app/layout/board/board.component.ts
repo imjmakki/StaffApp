@@ -13,6 +13,7 @@ export class BoardComponent implements OnInit {
 
   employeeValue!: FormGroup;
   employeeObj:EmployeeModel = new EmployeeModel();
+  employeeList:any[];
 
   constructor(private formBuilder:FormBuilder,
               private api:ApiService) { }
@@ -46,5 +47,10 @@ export class BoardComponent implements OnInit {
       this.employeeValue.rest();
     }
   )
+  }
+  getEmployee(){
+    this.api.getEmployee().subscribe(res => {
+      this.employeeList = res;
+    })
   }
 }
