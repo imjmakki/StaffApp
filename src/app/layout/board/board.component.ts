@@ -33,18 +33,18 @@ export class BoardComponent implements OnInit {
     this.employeeObj.team = this.employeeValue.value.team;
     this.employeeObj.email = this.employeeValue.value.email;
     this.employeeObj.phone = this.employeeValue.value.phone;
-    this.api.postEmployee(this.employeeObj).subscribe(next: (v) => {
+    this.api.postEmployee(this.employeeObj).subscribe((v) => {
       console.log(v)
     },
-      error: (e) => {
+      (e) => {
       console.log(e)
       alert("Error")
     },
-    complete: () => {
+    () => {
       console.log("Done")
       alert("Employee Added Successfully")
       this.getEmployee();
-      this.employeeValue.rest();
+      this.employeeValue.reset();
     }
   )
   }
