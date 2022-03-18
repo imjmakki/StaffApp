@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
+import {EmployeeModel} from "../../model/employee.model";
 
 @Component({
   selector: 'app-board',
@@ -8,7 +9,8 @@ import {FormBuilder, FormGroup} from "@angular/forms";
 })
 export class BoardComponent implements OnInit {
 
-  employeeValue!: FormGroup
+  employeeValue!: FormGroup;
+  employeeObj:EmployeeModel = new EmployeeModel();
 
   constructor(private formBuilder:FormBuilder) { }
 
@@ -23,6 +25,6 @@ export class BoardComponent implements OnInit {
 
 
   AddEmployee() {
-    
+
   }
 }
