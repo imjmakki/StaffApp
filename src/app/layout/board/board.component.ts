@@ -53,4 +53,8 @@ export class BoardComponent implements OnInit {
       this.employeeList = res;
     })
   }
+
+  deleteEmployee(data: any) {
+    
+  }
 }
