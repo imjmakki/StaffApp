@@ -24,7 +24,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
+    <tr *ngFor="let employee of employeeList">
       <td>1</td>
       <td>Mohamad J. Makki</td>
       <td>Back-End</td>
@@ -32,17 +32,6 @@
       <td>+964-7502078246</td>
       <td>
         <input type="button" value="Update" class="btn btn-success me-2" />
-        <input type="button" value="Remove" class="btn btn-danger" />
-      </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Nabeel D. Hussein</td>
-      <td>Phone</td>
-      <td>nabeeliko099@gmail.com</td>
-      <td>+964-7715405742</td>
-      <td>
-        <input type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" value="Update" class="btn btn-success me-2" />
         <input type="button" value="Remove" class="btn btn-danger" />
       </td>
     </tr>
