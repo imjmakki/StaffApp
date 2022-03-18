@@ -65,24 +65,24 @@
         <form [formGroup]="employeeValue">
           <div class="mb-3">
             <label for="txtName" class="form-label">Name</label>
-            <input type="email" class="form-control" id="txtName" placeholder="Name of the Employee">
+            <input type="text" formControlName="name" class="form-control" id="txtName" placeholder="Name of the Employee">
           </div>
           <div class="mb-3">
             <label for="txtTeam" class="form-label">Team</label>
-            <input type="email" class="form-control" id="txtTeam" placeholder="Employee Team">
+            <input type="text" formControlName="team" class="form-control" id="txtTeam" placeholder="Employee Team">
           </div>
           <div class="mb-3">
             <label for="txtEmail" class="form-label">Email address</label>
             <div class="input-group">
               <div class="input-group-text">@</div>
-            <input type="email" class="form-control" id="txtEmail" placeholder="Email of the Employee">
+            <input type="email" formControlName="email" class="form-control" id="txtEmail" placeholder="Email of the Employee">
             </div>
           </div>
           <div class="mb-3">
             <label for="txtPhone" class="form-label">Phone</label>
             <div class="input-group">
               <div class="input-group-text">+(964)</div>
-            <input type="email" class="form-control" id="txtPhone" placeholder="Employee's Phone Number">
+            <input type="text" formControlName="phone" class="form-control" id="txtPhone" placeholder="Employee's Phone Number">
             </div>
           </div>
         </form>
