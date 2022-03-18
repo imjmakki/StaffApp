@@ -55,6 +55,19 @@ export class BoardComponent implements OnInit {
   }
 
   deleteEmployee(data: any) {
-    
+    this.api.removeEmployee(data.id).subscribe(
+      (v) => {
+        console.log(v)
+      },
+        (e) => {
+          console.log(e)
+          alert("Error")
+        },
+        () => {
+          console.log("Employee has been removed")
+          alert("Employee Removed Successfully")
+          this.getEmployee();
+        }
+    )
   }
 }
