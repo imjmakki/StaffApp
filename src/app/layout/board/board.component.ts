@@ -43,7 +43,7 @@ export class BoardComponent implements OnInit {
       console.log("Done")
       alert("Employee Added Successfully")
       this.getEmployee();
-      this.formValue.rest();
+      this.employeeValue.rest();
     }
   )
   }
