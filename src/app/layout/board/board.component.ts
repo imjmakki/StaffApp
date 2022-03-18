@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder} from "@angular/forms";
+import {FormBuilder, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-board',
@@ -7,6 +7,8 @@ import {FormBuilder} from "@angular/forms";
   styleUrls: ['./board.component.css']
 })
 export class BoardComponent implements OnInit {
+
+  employeeValue: FormGroup
 
   constructor(private formBuilder:FormBuilder) { }
 
