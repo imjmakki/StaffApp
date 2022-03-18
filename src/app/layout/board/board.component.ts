@@ -90,6 +90,8 @@ export class BoardComponent implements OnInit {
         alert("Employee Updated Successfully")
         this.getEmployee();
         this.employeeValue.reset();
+        this.showSave()
+        this.employeeObj.id = 0;
       }
     )
   }
