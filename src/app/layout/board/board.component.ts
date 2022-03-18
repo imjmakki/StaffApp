@@ -14,7 +14,7 @@ export class BoardComponent implements OnInit {
   employeeObj:EmployeeModel = new EmployeeModel();
   employeeList!: any[];
   btnSaveShow:boolean=true;
-  btnUpdateShow:boolean=true;
+  btnUpdateShow:boolean=false;
 
   constructor(private formBuilder:FormBuilder,
               private api:ApiService) { }
