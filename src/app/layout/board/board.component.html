@@ -31,7 +31,7 @@
       <td>{{ employee.email }}</td>
       <td>{{ employee.phone }}</td>
       <td>
-        <input type="button" value="Update" class="btn btn-success me-2" />
+        <input type="button" (click)="editEmployee()" value="Update" class="btn btn-success me-2" />
         <input type="button" (click)="deleteEmployee(employee)" value="Remove" class="btn btn-danger" />
       </td>
     </tr>
