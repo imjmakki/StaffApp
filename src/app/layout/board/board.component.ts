@@ -25,6 +25,7 @@ export class BoardComponent implements OnInit {
       email:[''],
       phone:['']
     })
+    this.getEmployee();
   }
 
 
