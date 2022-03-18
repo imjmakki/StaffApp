@@ -93,4 +93,14 @@ export class BoardComponent implements OnInit {
       }
     )
   }
+
+  showSave(){
+    this.btnSaveShow = true;
+    this.btnUpdateShow = false;
+  }
+
+  showUpdate(){
+    this.btnSaveShow = false;
+    this.btnUpdateShow = true;
+  }
 }
