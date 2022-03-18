@@ -8,7 +8,7 @@ import {FormBuilder, FormGroup} from "@angular/forms";
 })
 export class BoardComponent implements OnInit {
 
-  employeeValue: FormGroup
+  employeeValue!: FormGroup
 
   constructor(private formBuilder:FormBuilder) { }
 
