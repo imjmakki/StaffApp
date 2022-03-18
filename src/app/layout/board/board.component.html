@@ -25,11 +25,11 @@
     </thead>
     <tbody>
     <tr *ngFor="let employee of employeeList">
-      <td>1</td>
-      <td>Mohamad J. Makki</td>
-      <td>Back-End</td>
-      <td>mehmet.anbaki@gmail.com</td>
-      <td>+964-7502078246</td>
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.team }}</td>
+      <td>{{ employee.email }}</td>
+      <td>{{ employee.phone }}</td>
       <td>
         <input type="button" value="Update" class="btn btn-success me-2" />
         <input type="button" value="Remove" class="btn btn-danger" />
