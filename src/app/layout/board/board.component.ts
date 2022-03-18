@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {EmployeeModel} from "../../model/employee.model";
 import {ApiService} from "../../shared/api.service";
-import {error} from "@angular/compiler/src/util";
 
 @Component({
   selector: 'app-board',
