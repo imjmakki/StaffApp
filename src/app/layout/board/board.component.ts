@@ -13,6 +13,8 @@ export class BoardComponent implements OnInit {
   employeeValue!: FormGroup;
   employeeObj:EmployeeModel = new EmployeeModel();
   employeeList!: any[];
+  btnSaveShow:boolean=true;
+  btnUpdateShow:boolean=true;
 
   constructor(private formBuilder:FormBuilder,
               private api:ApiService) { }
@@ -71,11 +73,24 @@ export class BoardComponent implements OnInit {
     )
   }
 
-  editEmployee(data: any) {
-    this.employeeValue.controls['name'].setValue(data.name);
-    this.employeeValue.controls['team'].setValue(data.team);
-    this.employeeValue.controls['email'].setValue(data.email);
-    this.employeeValue.controls['phone'].setValue(data.phone);
-    this.employeeObj.id = data.id;
+  editEmployee() {
+    this.employeeObj.name = this.employeeValue.value.name;
+    this.employeeObj.team = this.employeeValue.value.team;
+    this.employeeObj.email = this.employeeValue.value.email;
+    this.employeeObj.phone = this.employeeValue.value.phone;
+    this.api.updateEmployee(this.employeeObj, this.employeeObj.id).subscribe((v) => {
+        console.log(v)
+      },
+      (e) => {
+        console.log(e)
+        alert("Error")
+      },
+      () => {
+        console.log("Employee has been Updated")
+        alert("Employee Updated Successfully")
+        this.getEmployee();
+        this.employeeValue.reset();
+      }
+    )
   }
 }
