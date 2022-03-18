@@ -13,6 +13,7 @@ export class BoardComponent implements OnInit {
   constructor(private formBuilder:FormBuilder) { }
 
   ngOnInit(): void {
+    this.employeeValue = this.formBuilder.group()
   }
 
 }
