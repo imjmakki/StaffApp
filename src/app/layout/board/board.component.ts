@@ -21,4 +21,8 @@ export class BoardComponent implements OnInit {
     })
   }
 
+
+  AddEmployee() {
+    
+  }
 }
