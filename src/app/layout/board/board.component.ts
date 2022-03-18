@@ -70,4 +70,12 @@ export class BoardComponent implements OnInit {
         }
     )
   }
+
+  editEmployee(data: any) {
+    this.employeeValue.controls['name'].setValue(data.name);
+    this.employeeValue.controls['team'].setValue(data.team);
+    this.employeeValue.controls['email'].setValue(data.email);
+    this.employeeValue.controls['phone'].setValue(data.phone);
+    this.employeeObj.id = data.id;
+  }
 }

@@ -1,18 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": 2,
-      "name": "hassan ali hammadi",
-      "team": "technical support",
-      "email": "hassan@test.com",
-      "phone": "7700000000"
-    },
-    {
       "id": 3,
       "name": "Mohamad J Makki",
       "team": "Back-End",
@@ -25,15 +13,16 @@
       "team": "Phone",
       "email": "nabeeliko099@gmail.com",
       "phone": "7715405742"
-    }
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 5,
+      "name": "Hassan Ali H.",
+      "team": "Technical Support",
+      "email": "hassan@test.com",
+      "phone": "7703647082"
     }
   ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }
